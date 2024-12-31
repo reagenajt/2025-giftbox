@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.campaign-container {
+  width: 350px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #ff9800, #f57c00);
+  border: 5px solid #4CAF50;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 10px;
+  width: 80px; /* Adjust width as needed */
+  height: auto;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+.header ul li {
+  margin: 5px 0;
+}
+
+.gift-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.gift-box {
+  width: 70px;
+  height: 70px;
+  background: url('giftbox.png') no-repeat center center;
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gift-box:hover {
+  transform: scale(1.1);
+}
+
+.gift-box.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.prize {
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Changed to white */
+  margin: 20px 0;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  color: #000;
+}
+
+.form-container input[type="text"], 
+.form-container input[type="email"], 
+.form-container input[type="tel"] {
+  width: calc(50% - 10px);
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-container input[type="submit"] {
+  width: 100%;
+  background: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-container input[type="submit"]:hover {
+  background: #45a049;
+}

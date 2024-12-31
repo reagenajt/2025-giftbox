@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Gift Box</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="campaign-container">
+    <div class="header">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1>🎁 Choose Your Gift Box! 🎁</h1>
+      <p>Stand a chance to win one of these exciting prizes:</p>
+      <ul>
+        <li>🎉 20% Rebates</li>
+        <li>🎉 10 Free Candidates</li>
+        <li>🎉 RM300 Vouchers</li>
+      </ul>
+    </div>
+
+    <div class="gift-boxes">
+      <div class="gift-box" data-box="1"></div>
+      <div class="gift-box" data-box="2"></div>
+      <div class="gift-box" data-box="3"></div>
+      <div class="gift-box" data-box="4"></div>
+    </div>
+
+    <div id="prizeContainer" style="display: none;">
+      <p class="prize" id="prizeText"></p>
+    </div>
+
+    <div class="form-container" style="display: none;">
+      <h3>Claim Your Prize</h3>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone" required>
+        <input type="text" placeholder="Company Name" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
